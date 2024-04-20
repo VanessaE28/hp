@@ -1,0 +1,57 @@
+body{
+    background: url('../images/castelo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hpsolo{
+    position: absolute;
+    height: 180px;
+    left: -100%; 
+    top: 50%;
+    animation: voar 8s infinite;
+}
+
+#hpduo{
+    position: absolute;
+    height: 220px;
+    left: 110%;
+    top: 5%;
+    animation: voarhp 9s infinite;
+}
+
+@keyframes voar{
+    0%{
+        left: -100%;
+        top: 50%;
+    }
+
+    50%{
+        left: -20%;
+        top: 30%;
+    }
+
+    100%{
+        left: 110%;
+        top: 50%;
+    }
+}
+
+@keyframes voarhp {
+    0%{
+        left: 110%;
+        top: 5%;
+    }
+
+    50%{
+        left: 20%;
+        top: 20%;
+    }
+
+    100%{
+        left: -110%;
+        top: 5%;
+    }
+}
